@@ -260,6 +260,7 @@ function getWorkSchedule(period, countWorkDays, countOffDays) {
   const { start, end } = period;
   const startDate = new Date(start.split('-').reverse().join('-'));
   const endDate = new Date(end.split('-').reverse().join('-'));
+
   let result = [];
 
   while (startDate <= endDate) {
